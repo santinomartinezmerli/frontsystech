@@ -18,6 +18,9 @@ class ListaSource {
   final DateTime? ultimaActualizacion;
   final ListaEstado estado;
 
+  /// URL oficial desde la que el ingestor descarga la lista (opcional).
+  final String? urlDescarga;
+
   const ListaSource({
     required this.id,
     required this.nombre,
@@ -26,5 +29,6 @@ class ListaSource {
     this.totalProcesado,
     this.ultimaActualizacion,
     this.estado = ListaEstado.activa,
+    this.urlDescarga,
   });
 }
